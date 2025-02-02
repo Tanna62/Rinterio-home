@@ -1,16 +1,222 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio-home</title>
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-8MmVgGa8r3Nwr9KVGUG4fEO9Vd3LHR4GpLx5FwjFq8Pb0eyufJQwQ8AwOBc3AxyhdxwGqtD5YxY0wRzG8T27DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Tailwind + DaisyUI CDN Link -->
      
 <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
 <script src="https://cdn.tailwindcss.com"></script>
 
+<!-- Manrope CDN Link -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+<!-- Style -->
+ <style>
+.font-manrope{
+    font-family: "Manrope", serif;
+  
+  }
+ </style>
+
 </head>
-<body>
-    
+<body class="font-manrope  border-box ">
+    <header class="bg-[#FFFFFF] lg:mb-24 md:mb-16 mb-11">
+        <nav class="max-w-screen-xl mx-auto my-11 border-box">
+            <div >
+                <!-- DaisyUI -->
+                <div class="navbar space-x-20 md:space-x-32 pl-8 lg:pl-0 ">
+                    <div class="navbar-start space-x-2 ">
+                        <button class="btn btn-circle btn-outline bg-[#ABEF5F] hover:bg-[#acef5fcb] border-[#acef5fcb] hover:border-[#acef5fcb] ">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                              </svg>
+                              
+                          </button>
+                         
+
+                      <h1 class="lg:text-[32px] text-[25px] font-extrabold text-[#212121]">Rinterio</h1>
+                    </div>
+                    <!-- middle -->
+                    <div class="navbar-center space-x-4  hidden lg:flex">
+                     
+                      <p class="text-[#494949] font-extrabold text-base">Home</p>
+                      <p class="text-base font-regular text-[#737373]">Services</p>
+                      <p class="text-base font-regular text-[#737373]">Portfolio</p>
+                      <p class="text-base font-regular text-[#737373]">Blogs</p>
+                      <p class="text-base font-regular text-[#737373]">Contact Us</p>
+                    </div>
+                    <!-- End -->
+                    <div class="lg:navbar-end md:space-x-3 hidden md:flex lg:pr-24">
+                      <button class="btn btn-ghost btn-circle border-white hover:border-white bg-[#FFFF]">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          class="size-6 text-[#737373]"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor">
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                        </svg>
+                      </button>
+                      <button class="btn btn-circle    border-white hover:border-white bg-[#FFFF]">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-[#737373]  ">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
+                          </svg>
+                          
+                      </button>
+                      <button class="btn btn-xs sm:btn-sm md:btn-sm lg:btn-md bg-[#ABEF5F] hover:bg-[#acef5f8f] border-[#acef5fcb] hover:border-[#acef5fcb] rounded-3xl text-xl font-extra-bold ">Book Consult
+                        <div class="bg-black border-6 p-0.5 lg:p-2 border-black rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-white">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                              </svg>
+                              
+                            </div>
+                      </button>
+                    </div>
+                    <div class="dropdown lg:hidden md:pr-10 md:pl-0 pl-4">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            class="h-5 w-5"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M4 6h16M4 12h16M4 18h7" />
+                          </svg>
+                        </div>
+                        <ul
+                          tabindex="0"
+                          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-24 p-1 shadow">
+                          <p class="text-[#494949] font-extrabold text-base">Home</p>
+                      <p class="text-base font-regular text-[#737373]">Services</p>
+                      <p class="text-base font-regular text-[#737373]">Portfolio</p>
+                      <p class="text-base font-regular text-[#737373]">Blogs</p>
+                      <p class="text-base font-regular text-[#737373]">Contact Us</p>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+           
+        </nav>
+        <!-- Banner part -->
+         <div class="max-w-screen-xl mx-auto my-11 border-box">
+            <div class="space-y-6 text-center">
+                <div class="flex items-center justify-center w-64 mx-auto md:w-[430px] lg:w-[600px]">
+        <img src="./assets/banner.png" alt="This is a Banner of this website">
+    </div>
+        <h1 class="text-2xl md:text-4xl lg:text-6xl font-extrabold text-[#212121]">A barn house of this <br class="md:hidden"> design has a <br> striking appearance</h1>
+        <p class="text-[#494949] font-medium md:text-base text-sm">The barn house captivates with its blend of rustic <br class="md:hidden"> charm and modern <br class="hidden lg:hidden md:block"> sophistication, featuring <br class="md:hidden"> weathered wood, sleek  metal <br class="hidden lg:block"> accents, and large <br class=" lg:hidden"> windows that flood the space with natural light.</p>
+        <button class="btn btn-md sm:btn-md md:btn-md lg:btn-lg bg-[#acef5f75] hover:bg-[#acef5fc5] border-[#acef5f6c] hover:border-[#acef5f9a] rounded-full text-xl font-extra-bold md:px-6 px-24">View Details
+            <div class="bg-[#acef5f81] border-6 p-0.5 lg:p-2 border-[#acef5fcb] rounded-full">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6 text-black">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
+                  </svg>
+                  
+                </div>
+              </button>
+
+
+           </div> 
+         </div>
+    </header>
+
+               <!-- main section -->
+                <!-- About us -->
+                 <div class="max-w-screen-xl mx-auto my-11 border-box ">
+                    <img class="hidden lg:block" src="./assets/Vector.png" alt="">
+                 <div class="lg:flex lg:justify-center lg:items-center lg:gap-x-9 ">
+                   <!-- Left side -->
+                    <div class="space-y-4">
+                        <div class=" text-center lg:text-start lg:pl-10">
+                            <button class="btn bg-[#ffff] text-base font-bold te text-[#494949] ">
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3" />
+                                  </svg>
+                                
+                                  About Us
+                               
+                            </button>
+                        </div>
+                        <div class="text-center lg:text-start space-y-6 lg:pl-10">
+                           <h1 class="text-2xl md:text-[32px] lg:text-[40px] font-bold text-[#212121]">We design thoughtful, <br class=" md:hidden block lg:block"> liveable spaces</h1>
+                       <p class=" text-sm md:text-base font-medium text-[#494949]">The barn house captivates with its blend of rustic <br class="md:hidden"> charm and <br class="lg:block hidden">
+                        modern sophistication, <br class="md:block lg:hidden hidden"> featuring <br class="md:hidden"> weathered wood, sleek metal accents.</p>
+                    </div>
+                
+                    <!-- box-1   -->
+                     <div class="block md:flex lg:block  gap-y-6 rounded-lg md:gap-x-6 md:m-2 md:ml-8 mx-5">
+                     <div class="flex bg-[#ffffff] shadow-2xl  rounded-lg lg:p-6 gap-5 md:p-2 p-2">
+                        <!-- image -->
+                         <div class="flex justify-center items-center" >
+                          
+                             <img class="w-[40px]" src="./assets/commercial.png" alt="prototype of commercial building">
+                         </div>
+                         <!-- Text -->
+
+                         <div>
+                            <h5 class="text-base font-extrabold md:text-lg lg:text-xl  text-[#494949]">Residential</h5>
+                            <p class="text-base font-medium text-[#737373]">The barn house captivates with <br class="md:hidden">  its <br class="hidden md:block lg:hidden"> blend <br class="lg:block hidden "> of rustic charm and <br class=" md:hidden">  modern.</p>
+                            </div>
+                     </div>
+                     <!-- box-2 -->
+                     <div class="flex bg-[#ffffff] shadow-2xl lg:mt-6 md:mt-0 mt-6  rounded-lg lg:p-6 gap-5 md:py-4 md:px-3 ">
+                        <!-- image  -->
+                         <div class="flex justify-center items-center ">
+                          
+                             <img class="w-[40px]" src="./assets/residential.png" alt="prototype of commercial building">
+                         </div>
+                         <!-- Text -->
+
+                         <div>
+                         <h5 class="text-base font-extrabold md:text-lg lg:text-xl  text-[#494949]">commercial</h5>
+                         <p class="text-base font-medium text-[#737373]">The barn house captivates with <br class="md:hidden">  its <br class="hidden md:block lg:hidden"> blend <br class="lg:block hidden "> of rustic charm and <br class=" md:hidden">  modern.</p>
+                         </div>
+                     </div>
+                   
+                    </div>
+                </div>
+                <!--Right side  -->
+            
+                <div class="flex items-center justify-center mt-6 ">
+              
+                 <img class="w-[96%] mx-auto"  src="./assets/Rectangle.png" alt="">
+
+
+                </div>
+
+
+
+
+
+                   </div>
+           
+                 </div>
+
+                  <!--review section  -->
+                  <section>
+           <div>
+
+
+
+
+           </div>
+                  </section>
+
+
+
 </body>
 </html>
